@@ -26,13 +26,12 @@
 
 n,m = map(int, input().split())
 li = list(map(int, input().split()))
-
 for k in range(1,n):
         li[k] += li[k-1]
 li = [0] + li
-
 for u in range(m):
     i, j = map(int, input().split())
     print(li[j]-li[i-1])
 
+# 4860ms 126436kb 시간 줄여봐야겠다.
 
