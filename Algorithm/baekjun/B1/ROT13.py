@@ -41,3 +41,4 @@ for j in answer:
     rot13 += chr(j)
 print(rot13)
 
+# 교수님의 팁으로 바꿔 코드가 간결해졌다. 시간복잡도와 메모리는 같았다.
