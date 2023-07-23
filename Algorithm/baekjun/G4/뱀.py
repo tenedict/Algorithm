@@ -46,6 +46,7 @@ for k in range(turns):
 eatapple = 0
 wayhistory = []
 while game == True:
+    
     if turntime:
         if int(turntime[0]) == time:
             turntime.popleft()
@@ -74,7 +75,7 @@ while game == True:
 
 
     #뱀 이동
-    # pprint.pprint(board)
+    pprint.pprint(board)
     aaa = 0
     if way == "east":
         headx += 1
@@ -147,4 +148,6 @@ while game == True:
         if aaa == 0:
             taily += 1
             board[taily-1][tailx] = 0
+
+# 처음푼 골드~~
  
