@@ -1,25 +1,25 @@
 n, m = map(int, input().split())
 
 sixprice = 0
-s = False
 oneprice = 0
-o = False
+cnt = 0
 
 for i in range(m):
+    
     sixpack, one = map(int, input().split())
-    print(oneprice,'kkkkklllll')
-    if sixpack < sixprice and s == True:
-        sixprice = sixpack
-    else: 
-        sixprice = sixpack
-        s = True
-    
-    if oneprice > one and o == True:
-        oneprice = one
+    if cnt > 0:
+        if sixpack < sixprice:
+            sixprice = sixpack
+        
+        if oneprice > one:
+            oneprice = one
     else:
+        sixprice = sixpack
         oneprice = one
-        o = True
+        cnt += 1
+
     
+print(sixprice, oneprice)
 j = n//6
 k = n%6
 
