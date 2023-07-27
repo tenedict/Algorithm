@@ -19,7 +19,6 @@ for i in range(m):
         cnt += 1
 
     
-print(sixprice, oneprice)
 j = n//6
 k = n%6
 
