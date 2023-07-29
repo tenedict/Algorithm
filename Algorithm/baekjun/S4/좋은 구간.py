@@ -9,30 +9,49 @@ a = 0
 for i in range(n):
     if li[i] > m:
         b = li[i]
-        if i >= 1:
+        if i >0:
             a = li[i-1]
             break
+        else:
+            a = 0
+            break
 
-cnt1 = 0
+
+
+
+lista = []
 t = True
 while t:
     a += 1
     if m >=a:
-        cnt1 += 1
+        lista.append(a)
     else:
         t = False
-cnt2 = 0
+
+listb = []
 f = True
 while f:
     b -= 1
     if m <= b:
-        cnt2 += 1
+        listb.append(b)
     else:
         f = False
 
-if (cnt1*cnt2-1) >0:
-    print(cnt1*cnt2-1)
-else:
-    print(0)
+# if not lista:
+#     for k in range(1,m):
+#         lista.append(k)
+
+answer = 0
+for i in lista:
+    for j in listb:
+        if j>i:
+            answer += 1
+        else:
+            continue
+print(answer)
+
+
+#기차에서 풀다가 틀렸는데 멀미나서 생각하기가 싫음
+# 다음날 풀었다 !! 반례가 짜증나는군!!
 
 
