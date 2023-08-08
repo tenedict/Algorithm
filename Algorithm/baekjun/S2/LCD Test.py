@@ -1,11 +1,9 @@
-
 s, m = map(int, input().split())
 m = str(m)
 mm = []
 for ii in m:
     mm.append(int(ii))
 m = mm
-print(s , m)
 
 sero = 2*s + 3
 
