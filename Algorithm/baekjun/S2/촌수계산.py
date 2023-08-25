@@ -37,5 +37,6 @@ if seq[you]== 0:
     print(-1)
 else:
     print(seq[you])
+    #깃풀실험
             
             
