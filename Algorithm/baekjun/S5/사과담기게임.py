@@ -22,15 +22,15 @@ for _ in range(k):
         else:
             if s > max(now):
                 g += 1
-                pop = now.popleft()
-                li[pop] = False
-                now.append(pop+m)
-                li[pop+m] = True
+                po = now.popleft()
+                li[po] = False
+                now.append(po+m)
+                li[po+m] = True
             else:
                 g += 1
-                pop = now.pop()
-                li[pop] = False
-                now.append(pop-m)
-                li[pop-m] = True
+                po = now.pop()
+                li[po] = False
+                now.appendleft(po-m)
+                li[po-m] = True
 
 print(g)

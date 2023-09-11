@@ -19,13 +19,11 @@ while yes:
         count += 1
         mm = mm[:-1]
         m = int(mm)
-        print(m)
 
     elif m%2 == 0:
         count += 1
         m = round(m/2)
         mm = str(m)
-        print(m)
 
     else:
         yes = False
